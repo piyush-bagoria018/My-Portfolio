@@ -104,7 +104,25 @@ const Hero = () => {
       >
         <div>
           <div className="tech-icon">
-            <img src="/react.png" alt="" />
+            <motion.img
+              src="public\\react.png"
+              alt="React"
+              animate={{
+                scale: [1, 1.18, 1],
+                rotate: [0, 360],
+                filter: [
+                  "drop-shadow(0 0 0 #61dafb)",
+                  "drop-shadow(0 0 16px #61dafb)",
+                  "drop-shadow(0 0 0 #61dafb)",
+                ],
+              }}
+              transition={{
+                duration: 2.5,
+                repeat: Infinity,
+                repeatType: "loop",
+                ease: "linear",
+              }}
+            />
           </div>
           <motion.div
             className="hero-img-profile-wrapper"
@@ -114,19 +132,72 @@ const Hero = () => {
             }}
             transition={{ type: "spring", stiffness: 300 }}
           >
-            <img src="/piyush.jpg" alt="Piyush Kumar" />
+            <img src="public/piyush.jpg" alt="Piyush Kumar" />
           </motion.div>
         </div>
 
         <div>
           <div className="tech-icon">
-            <img src="/html.png" alt="" />
+            <motion.img
+              src="public\\html.png"
+              alt="HTML"
+              animate={{
+                y: [0, -10, 0],
+                filter: [
+                  "drop-shadow(0 0 0 #ff5722)",
+                  "drop-shadow(0 0 10px #ff5722)",
+                  "drop-shadow(0 0 0 #ff5722)",
+                ],
+              }}
+              transition={{
+                duration: 1.8,
+                repeat: Infinity,
+                repeatType: "loop",
+                ease: "easeInOut",
+              }}
+            />
           </div>
           <div className="tech-icon">
-            <img src="/css.png" alt="" />
+            <motion.img
+              src="public\\css.png"
+              alt="CSS"
+              animate={{
+                x: [0, 10, 0, -10, 0],
+                filter: [
+                  "drop-shadow(0 0 0 #2196f3)",
+                  "drop-shadow(0 0 10px #2196f3)",
+                  "drop-shadow(0 0 0 #2196f3)",
+                  "drop-shadow(0 0 10px #2196f3)",
+                  "drop-shadow(0 0 0 #2196f3)",
+                ],
+              }}
+              transition={{
+                duration: 2.2,
+                repeat: Infinity,
+                repeatType: "loop",
+                ease: "easeInOut",
+              }}
+            />
           </div>
           <div className="tech-icon">
-            <img src="/Js.png" alt="" />
+            <motion.img
+              src="public\\Js.png"
+              alt="JavaScript"
+              animate={{
+                scale: [1, 1.12, 1],
+                filter: [
+                  "drop-shadow(0 0 0 #f7df1e)",
+                  "drop-shadow(0 0 10px #f7df1e)",
+                  "drop-shadow(0 0 0 #f7df1e)",
+                ],
+              }}
+              transition={{
+                duration: 2.1,
+                repeat: Infinity,
+                repeatType: "loop",
+                ease: "easeInOut",
+              }}
+            />
           </div>
         </div>
       </motion.div>
