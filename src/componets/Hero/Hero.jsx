@@ -105,7 +105,7 @@ const Hero = () => {
         <div>
           <div className="tech-icon">
             <motion.img
-              src="public\\react.png"
+              src="public\react.png"
               alt="React"
               animate={{
                 scale: [1, 1.18, 1],
@@ -132,14 +132,14 @@ const Hero = () => {
             }}
             transition={{ type: "spring", stiffness: 300 }}
           >
-            <img src="public/piyush.jpg" alt="Piyush Kumar" />
+            <img src="public\piyush.jpg" alt="Piyush Kumar" />
           </motion.div>
         </div>
 
         <div>
           <div className="tech-icon">
             <motion.img
-              src="public\\html.png"
+              src="public\html.png"
               alt="HTML"
               animate={{
                 y: [0, -10, 0],
@@ -159,7 +159,7 @@ const Hero = () => {
           </div>
           <div className="tech-icon">
             <motion.img
-              src="public\\css.png"
+              src="public\css.png"
               alt="CSS"
               animate={{
                 x: [0, 10, 0, -10, 0],
@@ -181,7 +181,7 @@ const Hero = () => {
           </div>
           <div className="tech-icon">
             <motion.img
-              src="public\\Js.png"
+              src="public\Js.png"
               alt="JavaScript"
               animate={{
                 scale: [1, 1.12, 1],
