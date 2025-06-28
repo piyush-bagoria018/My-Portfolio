@@ -17,8 +17,7 @@ const Navbar = () => {
     <MobileNav isOpen={openMenu} toggleMenu={toggleMenu}/>
       <nav className="nav-wrapper">
         <div className="nav-content">
-          <img className="Logo" src="public\Logo.png" alt="" />
-
+          <img className="Logo" src="public\\Logo.png" alt="" />
           <ul>
           <li>
               <Link activeClass="active" to="hero" smooth spy offset={-60} className="menu-item">Home</Link>
