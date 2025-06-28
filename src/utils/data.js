@@ -10,12 +10,14 @@ export const SKILLS = [
     ],
   },
   {
-    title: "Backend",
-    icon: "public/backend-icon.png",
-    skills: [
-      { skill: "Python", percentage: "70%" },
-      { skill: "Django", percentage: "60%" },
-    ],
+    "title": "Backend",
+    "icon": "public/backend-icon.png",
+    "skills": [
+      { skill: "Node.js", percentage: "80%" },
+      { skill: "Express.js", percentage: "75%" },
+      { skill: "MongoDB", percentage: "70%" },
+      { skill: "NoSQL Databases", percentage: "65%" }
+    ]
   },
   {
     title: "Tools",
@@ -23,8 +25,10 @@ export const SKILLS = [
     skills: [
       { skill: "Git & GitHub", percentage: "85%" },
       { skill: "Visual Studio Code", percentage: "75%" },
-      { skill: "Github Action", percentage: "70%" },
-      { skill: "InteliJ", percentage: "70%" },
+      { skill: "Vercel", percentage: "80%" },
+      { skill: "Render", percentage: "75%" },
+      { skill: "Postman", percentage: "85%" },
+      { skill: "Figma", percentage: "70%" },
     ],
   },
   {
@@ -88,24 +92,30 @@ export const WORK_EXPERIENCE = [
 
 export const PROJECTS = [
   {
-    title: "Calculator Application",
-    stack: "HTML, CSS, JAVASCRIPT",
+    title: "Smart India Hackathon 2024 – Assured Contract Farming System",
+    stack: "Node.js, React, SQL/NoSQL, AWS, APIs",
     responsibilities: [
-      "Developed a web calculator application. Responsible for creating a responsive interface and implementing real-time arithmetic operations.",
+      "Built a platform connecting farmers directly with buyers for stable market access as part of Team CodeSow.",
+      "Implemented secure digital contracts, automated payments, and AI-driven market insights.",
+      "Designed a bidding system for fair pricing and transparency."
     ],
   },
   {
-    title: "Digital Clock",
-    stack: "HTML, CSS, JAVASCRIPT",    
+    title: "Music School Website",
+    stack: "Next.js, TypeScript, Tailwind CSS, Express.js, MongoDB, Vercel, Render",
+    link: "https://music-school-chi-eight.vercel.app/",
     responsibilities: [
-      "Developed a digital clock application with a responsive design, ensuring accurate real-time display of hours, minutes, and seconds.",
+      "Developed a full-stack web app for a music academy with real-time form handling and seamless deployment.",
+      "Built a responsive frontend (Next.js, TypeScript, Tailwind CSS) and robust backend (Express.js, MongoDB Atlas).",
+      "Integrated secure REST API, used Formik/Yup for validation, deployed frontend on Vercel and backend on Render."
     ],
   },
   {
-    title: "Weather Application",
-    stack: "HTML, CSS, JAVASCRIPT",
+    title: "AI-based Tic Tac Toe Game",
+    stack: "React, JavaScript, AI Algorithms",
     responsibilities: [
-      "Developed a weather application with real-time data updates, providing users with accurate forecasts, temperature, and humidity levels.",
+      "Created an interactive Tic Tac Toe game with an AI opponent that adapts its strategy for challenging gameplay.",
+      "Implemented intelligent move selection and responsive UI for an engaging user experience."
     ],
   },
 ];
