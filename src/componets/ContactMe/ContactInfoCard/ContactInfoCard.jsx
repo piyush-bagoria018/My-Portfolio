@@ -12,14 +12,28 @@ const ContactInfoCard = ({ iconUrl, text, link }) => {
           className="icon-link"
         >
           <div className="icon">
-            <img src={iconUrl} alt={text} />
+            <img
+              src={
+                iconUrl.startsWith("/")
+                  ? iconUrl
+                  : `/${iconUrl.replace(/^public[\\/]/, "")}`
+              }
+              alt={text}
+            />
           </div>
           {text}
         </a>
       ) : (
         <>
           <div className="icon">
-            <img src={iconUrl} alt={text} />
+            <img
+              src={
+                iconUrl.startsWith("/")
+                  ? iconUrl
+                  : `/${iconUrl.replace(/^public[\\/]/, "")}`
+              }
+              alt={text}
+            />
           </div>
           <p>{text}</p>
         </>

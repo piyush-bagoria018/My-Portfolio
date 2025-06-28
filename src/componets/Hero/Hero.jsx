@@ -88,7 +88,7 @@ const Hero = () => {
           <span className="blinking-cursor">|</span>
         </motion.p>
         <a
-          href="public\Piyush_Resume.pdf"
+          href="/Piyush_Resume.pdf"
           download
           className="download-resume-btn"
         >
@@ -104,7 +104,7 @@ const Hero = () => {
       >
         <div>
           <div className="tech-icon">
-            <img src="public\\react.png" alt="" />
+            <img src="/react.png" alt="" />
           </div>
           <motion.div
             className="hero-img-profile-wrapper"
@@ -114,19 +114,19 @@ const Hero = () => {
             }}
             transition={{ type: "spring", stiffness: 300 }}
           >
-            <img src="public/piyush.jpg" alt="Piyush Kumar" />
+            <img src="/piyush.jpg" alt="Piyush Kumar" />
           </motion.div>
         </div>
 
         <div>
           <div className="tech-icon">
-            <img src="public\\html.png" alt="" />
+            <img src="/html.png" alt="" />
           </div>
           <div className="tech-icon">
-            <img src="public\\css.png" alt="" />
+            <img src="/css.png" alt="" />
           </div>
           <div className="tech-icon">
-            <img src="public\\Js.png" alt="" />
+            <img src="/Js.png" alt="" />
           </div>
         </div>
       </motion.div>

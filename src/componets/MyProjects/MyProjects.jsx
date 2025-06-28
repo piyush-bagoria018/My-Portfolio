@@ -47,10 +47,10 @@ const MyProjects = () => {
 
       <div className="projects-content">
         <div className="arrow-right" onClick={slideRight}>
-          <img src="public\\right arrow.png" alt="right arrow" />
+          <img src="/right arrow.png" alt="right arrow" />
         </div>
         <div className="arrow-left" onClick={slideLeft}>
-          <img src="public\\left arrow.png" alt="left arrow" />
+          <img src="/left arrow.png" alt="left arrow" />
         </div>
 
         <Slider ref={slideRef} {...settings}>
