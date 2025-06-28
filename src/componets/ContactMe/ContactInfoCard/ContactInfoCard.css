@@ -30,3 +30,10 @@
   font-size: 0.9rem;
   font-weight: 400;
 }
+.icon-link {
+  text-decoration: none;
+  color: white;
+}
+.icon-link:hover {
+  color: #a892fe;
+}
