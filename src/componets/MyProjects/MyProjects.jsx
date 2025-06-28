@@ -1,4 +1,5 @@
 import React, { useRef } from "react";
+import { motion } from "framer-motion";
 import "./MyProjects.css";
 import ProjectsCard from "./ProjectsCard/ProjectsCard";
 import { PROJECTS } from "../../utils/data";
@@ -34,15 +35,22 @@ const MyProjects = () => {
   };
 
   return (
-    <section id="projects" className="projects-container">
+    <motion.section
+      id="projects"
+      className="projects-container"
+      initial={{ opacity: 0, y: 60 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true, amount: 0.3 }}
+      transition={{ duration: 0.8, ease: "easeOut" }}
+    >
       <h5>My Projects</h5>
 
       <div className="projects-content">
         <div className="arrow-right" onClick={slideRight}>
-          <img src="public\right arrow.png" alt="right arrow" />
+          <img src="public\\right arrow.png" alt="right arrow" />
         </div>
         <div className="arrow-left" onClick={slideLeft}>
-          <img src="public\left arrow.png" alt="left arrow" />
+          <img src="public\\left arrow.png" alt="left arrow" />
         </div>
 
         <Slider ref={slideRef} {...settings}>
@@ -51,7 +59,7 @@ const MyProjects = () => {
           ))}
         </Slider>
       </div>
-    </section>
+    </motion.section>
   );
 };
 

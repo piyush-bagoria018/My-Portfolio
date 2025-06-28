@@ -41,6 +41,19 @@
   top: 0.35rem;
 }
 
+.project-link {
+  font-size: 0.85rem;
+  color: #ffff;
+  text-decoration: none;
+  margin-left: 8px;
+  font-weight: 500;
+  vertical-align: middle;
+}
+
+.project-link:hover {
+  color: #7c66e3;
+}
+
 @media (max-width: 768px) {
   .projects-card {
     margin: 0;
