@@ -139,7 +139,7 @@ const Hero = () => {
         <div>
           <div className="tech-icon">
             <motion.img
-              src="public\html.png"
+              src="\html.png"
               alt="HTML"
               animate={{
                 y: [0, -10, 0],
