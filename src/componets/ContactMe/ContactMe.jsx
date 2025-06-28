@@ -19,7 +19,7 @@ const ContactMe = () => {
       <div className="contact-content">
         <div style={{ flex: 1 }}>
           <ContactInfoCard
-            iconUrl="public\\github.png"
+            iconUrl="public\github.png"
             text="GitHub"
             link="https://github.com/piyush-bagoria018"
           />
