@@ -37,6 +37,29 @@
   margin-left: -2rem;
 }
 
+.mobile-menu .contact-btn {
+  display: block;
+  width: 100%;
+  margin: 2rem 0 0 0;
+  padding: 0.8rem 0;
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #fff;
+  background: linear-gradient(90deg, #a993fe 0%, #7e61e7 100%);
+  border: 1.5px solid #a993fe;
+  border-radius: 0.5rem;
+  text-decoration: none;
+  transition: background 0.2s, color 0.2s;
+  box-shadow: 0 4px 16px rgba(44, 62, 80, 0.10);
+  cursor: pointer;
+}
+
+.mobile-menu .contact-btn:hover {
+  color: #a993fe;
+  background: #000;
+}
+
 @media (max-width: 769px) {
   .mobile-menu {
     display: block;

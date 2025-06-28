@@ -29,9 +29,14 @@ const MobileNav = ({isOpen, toggleMenu}) => {
               <Link activeClass="active" to="contacts" smooth spy offset={-100} className="menu-item">Contact Me</Link>
             </li>
 
-            <button className="contact-btn" onClick={() => {}}>
-            <Link activeClass="active" to="contacts" smooth spy offset={-100}>Hire Me</Link>
-            </button>
+            <a
+    href="/Piyush_Resume.pdf"
+    download
+    className="contact-btn"
+    style={{ textDecoration: 'none', color: 'white', display: 'inline-block', marginTop: '1rem' }}
+  >
+    Download Resume
+  </a>
           </ul>
         </div>
       </div>
