@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { motion } from "framer-motion";
 import "./Skills.css";
 import SkillCard from "./SkillCard/SkillCard";
 import SkillsInfoCard from "./SkillsInfoCard/SkillsInfoCard";
@@ -12,7 +13,14 @@ const Skills = () => {
   };
 
   return (
-    <section id="skills" className="skills-container">
+    <motion.section
+      id="skills"
+      className="skills-container"
+      initial={{ opacity: 0, y: 60 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true, amount: 0.3 }}
+      transition={{ duration: 0.8, ease: "easeOut" }}
+    >
       <h5>Technical Proficiency</h5>
 
       <div className="skills-content">
@@ -37,7 +45,7 @@ const Skills = () => {
           />
         </div>
       </div>
-    </section>
+    </motion.section>
   );
 };
 
